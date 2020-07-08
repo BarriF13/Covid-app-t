@@ -1,15 +1,18 @@
 .header{
   background: #242424;
   height: 80px;
-  border-bottom: 3px solid orange;
+  border-bottom: 5px solid rgb(180, 5, 5);
 }
 .headerOpt{
   display: flex;
 }
 .logo{
   flex-grow: 1;
-  padding-top: 8px;
+  padding-top: 1px;
+ 
 }
 .logo img {
-  height: 80px;
+  height: 78px;
+  border-radius: 10px;
+ 
 }
