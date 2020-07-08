@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import './layout.css';
 export class Layout extends Component {
   state = {
 
@@ -8,11 +8,13 @@ export class Layout extends Component {
   render() {
     return (
       <div>
+        
         header
         {this.props.children}
         footer
       </div>
     )
+   
   }
 }
 
