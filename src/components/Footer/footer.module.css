@@ -1,0 +1,18 @@
+ .footer{
+   margin-top: 20px;
+   background: rgb(180, 5, 5);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .logo img {
+   height: 30px;
+   padding: 10px;
+   border-radius: 30px;
+ }
+ .right {
+
+   color: white;
+   font-size: 10px;
+ }
