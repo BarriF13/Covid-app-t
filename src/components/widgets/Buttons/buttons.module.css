@@ -8,4 +8,7 @@
   font-weight: 500;
   padding:10px 10px;
   cursor: pointer;
+  
+  display: block;
+  text-decoration: none;
 }

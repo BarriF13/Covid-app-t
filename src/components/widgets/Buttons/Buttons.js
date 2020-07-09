@@ -15,6 +15,16 @@ import style from './buttons.module.css';
        </div>
      );
       break;
+      case'linkTo':
+      template =(
+        <Link to={props.linkTo}
+         className={style.blue_btn}
+         >
+           {props.cta}
+         </Link>
+       
+      )
+      break;
       default:
         template =null;
    }

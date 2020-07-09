@@ -19,11 +19,28 @@ export class VideosList extends Component {
     <h3><strong>COVID-19</strong> videos</h3>
     : null
   }
+  loadMore =()=>{}
+
+  renderButton =()=>{
+    return this.props.loadmore ? 
+    <Button
+    type="loadmore"
+    loadMore ={()=> this.loadMore()}
+    cta="Load More Videos"
+    />
+    :
+     <Button
+      type="linkTo"
+     cta="More videos"
+     linkTo="/videos"/> ;
+
+  }
 
   render() {
     return (
       <div className={style.videoList_wrapper}>
         {this.renderTitle()}
+        {this.renderButton()}
       </div>
     )
   }
