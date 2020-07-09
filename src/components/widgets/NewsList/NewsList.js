@@ -6,10 +6,13 @@ import axios from 'axios'
 import { URL } from '../../../config';
 import style from './newsList.module.css';
 import Button from '../Buttons/Buttons';
+import CardInfo from '../CardInfo/CardInfo';
+
 
 export class NewsList extends Component {
 
   state = {
+    hospitals:[],
     items: [],
     start: this.props.start,
     end: this.props.start + this.props.amount,
@@ -22,6 +25,16 @@ export class NewsList extends Component {
     this.request(this.state.start,this.state.end)
   }
   request = (start, end) => {
+    //request hospital
+    if(this.state.hospitals.length < 1){
+        axios.get(`${URL}/hospitals`)
+        .then(res =>{
+          this.setState({
+            hospitals:res.data
+          })
+        })
+      }
+
     //request
     axios.get(`${URL}/articles?_start=${start}&_end=${end}`)
       //catching the promise
@@ -55,7 +68,7 @@ export class NewsList extends Component {
           <div>
             <div className={style.newsList_item}>
               <Link to={`/articles/${item.id}`}>
-                teams
+               <CardInfo />
                 <h2>{item.title}</h2>
               </Link>
 
@@ -67,13 +80,12 @@ export class NewsList extends Component {
       default:
         template = null;
     }
-
     return template;
   }
 
-
   render() {
     // console.log(this.state.items);
+    // console.log(this.state.hospitals);
     return (
       <div>
         <TransitionGroup
