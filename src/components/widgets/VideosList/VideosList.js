@@ -13,10 +13,17 @@ export class VideosList extends Component {
     end: this.props.start + this.props.amount,
     amount: this.props.amount
   }
+
+  renderTitle = () => {
+    return this.props.title ? 
+    <h3><strong>COVID-19</strong> videos</h3>
+    : null
+  }
+
   render() {
     return (
-      <div>
-        videos
+      <div className={style.videoList_wrapper}>
+        {this.renderTitle()}
       </div>
     )
   }

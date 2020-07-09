@@ -1,7 +1,11 @@
-import React from 'react'
+import React from 'react';
+
 import NewsSlider from '../widgets/NewsSlider/Slider';
 import NewsList from '../widgets/NewsList/NewsList'
-import VideosList from '../widgets/VideosList/VideosList'
+import VideosList from '../widgets/VideosList/VideosList';
+
+
+
 export const Home = () => {
   return (
     <div>
