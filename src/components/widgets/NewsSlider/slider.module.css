@@ -1,0 +1,29 @@
+.featured_item{
+  position: relative;
+  background:rgb(217, 255, 0);
+}
+
+.featured_item a{
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  text-decoration: none;
+  right: 0px;
+}
+.featured_image {
+  height: 330px;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center center;
+} 
+.featured_caption {
+  color: rgb(250, 250, 250);
+  top: 0px;
+  width: 100%;
+  padding: 20px;
+  padding-top:40px;
+  font-weight: 500;
+  font-size: 20px;
+  text-shadow: 2px 2px 2px black;
+
+}
