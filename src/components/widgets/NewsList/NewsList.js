@@ -43,6 +43,15 @@ let end = this.state.end + this.state.amount
     switch (type) {
       case ('card'):
         template = this.state.items.map((item, i) => (
+          <CSSTransition
+          classNames={{
+              enter:style.newsList_wrapper,
+              enterActive:style.newsList_wrapper_enter
+
+          }}
+          timeout= {500}
+          key={i}
+          >
           <div>
             <div className={style.newsList_item}>
               <Link to={`/articles/${item.id}`}>
@@ -51,7 +60,7 @@ let end = this.state.end + this.state.amount
 
             </div>
           </div>
-
+          </CSSTransition>
         ))
         break;
       default:
@@ -66,7 +75,12 @@ let end = this.state.end + this.state.amount
     console.log(this.state.items);
     return (
       <div>
-        {this.renderNews(this.props.type)}
+        <TransitionGroup
+        component="div"
+        className="list"
+        >
+          {this.renderNews(this.props.type)}
+        </TransitionGroup>
         <div onClick={()=> this.loadMore()}>
           Load More
         </div>
