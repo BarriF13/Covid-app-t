@@ -30,7 +30,9 @@ export class VideosList extends Component {
       //catching the promise
       .then(res => {
         this.setState({
-          videos: [...this.state.videos, ...res.data]
+          videos: [...this.state.videos, ...res.data],
+          start,
+          end
         })
       })
   }
@@ -53,7 +55,12 @@ export class VideosList extends Component {
     }
     return template;
   }
-  loadMore = () => { }
+
+  loadMore = () => {
+    let end = this.state.end + this.state.amount;
+
+    this.request(this.state.end, end)
+  }
 
   renderButton = () => {
     return this.props.loadmore ?

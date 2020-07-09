@@ -14,7 +14,11 @@ const VideosListTemplate = (props) => {
           style={{ background:`url(/images/videos/${item.image})` }}>
           <div></div>
         </div>
+
         <div className={style.right}>
+          <CardInfo hospitals={props.hospitals}
+           hospital={item.hospital}
+           date={item.date}/>
           <h2>{item.title}</h2>
         </div>
       </div>
