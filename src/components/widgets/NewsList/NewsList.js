@@ -12,7 +12,7 @@ import CardInfo from '../CardInfo/CardInfo';
 export class NewsList extends Component {
 
   state = {
-    hospitals:[],
+    hospitals: [],
     items: [],
     start: this.props.start,
     end: this.props.start + this.props.amount,
@@ -22,30 +22,30 @@ export class NewsList extends Component {
   //check request
 
   componentWillMount() {
-    this.request(this.state.start,this.state.end)
+    this.request(this.state.start, this.state.end)
   }
   request = (start, end) => {
     //request hospital
-    if(this.state.hospitals.length < 1){
-        axios.get(`${URL}/hospitals`)
-        .then(res =>{
+    if (this.state.hospitals.length < 1) {
+      axios.get(`${URL}/hospitals`)
+        .then(res => {
           this.setState({
-            hospitals:res.data
+            hospitals: res.data
           })
         })
-      }
+    }
 
     //request
     axios.get(`${URL}/articles?_start=${start}&_end=${end}`)
       //catching the promise
       .then(res => {
         this.setState({
-          items:[...this.state.items, ...res.data]
+          items: [...this.state.items, ...res.data]
         })
       })
   }
-  loadMore = ()=>{
-      let end = this.state.end + this.state.amount;
+  loadMore = () => {
+    let end = this.state.end + this.state.amount;
 
     this.request(this.state.end, end)
   }
@@ -57,23 +57,23 @@ export class NewsList extends Component {
       case ('card'):
         template = this.state.items.map((item, i) => (
           <CSSTransition
-          classNames={{
-              enter:style.newsList_wrapper,
-              enterActive:style.newsList_wrapper_enter
+            classNames={{
+              enter: style.newsList_wrapper,
+              enterActive: style.newsList_wrapper_enter
 
-          }}
-          timeout= {500}
-          key={i}
+            }}
+            timeout={500}
+            key={i}
           >
-          <div>
-            <div className={style.newsList_item}>
-              <Link to={`/articles/${item.id}`}>
-               <CardInfo />
-                <h2>{item.title}</h2>
-              </Link>
+            <div>
+              <div className={style.newsList_item}>
+                <Link to={`/articles/${item.id}`}>
+                  <CardInfo hospitals={this.state.hospitals} hospital={item.hospital} date={item.date}/>
+                  <h2>{item.title}</h2>
+                </Link>
 
+              </div>
             </div>
-          </div>
           </CSSTransition>
         ))
         break;
@@ -89,18 +89,18 @@ export class NewsList extends Component {
     return (
       <div>
         <TransitionGroup
-        component="div"
-        className="list"
+          component="div"
+          className="list"
         >
           {this.renderNews(this.props.type)}
         </TransitionGroup>
 
         <Button
           type="loadmore"
-          loadMore = {()=> this.loadMore()}
+          loadMore={() => this.loadMore()}
           cta="Load More News"
         />
-        
+
       </div>
     )
   }
