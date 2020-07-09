@@ -68,7 +68,7 @@ export class NewsList extends Component {
             <div>
               <div className={style.newsList_item}>
                 <Link to={`/articles/${item.id}`}>
-                  <CardInfo hospitals={this.state.hospitals} hospital={item.hospital} date={item.date}/>
+                  <CardInfo hospitals={this.state.hospitals} hospital={item.hospital} date={item.date} />
                   <h2>{item.title}</h2>
                 </Link>
 
