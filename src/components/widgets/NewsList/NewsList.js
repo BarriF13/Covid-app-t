@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { Link } from 'react-router-dom';
-import axios from 'axios'
+import axios from 'axios';
 
 import { URL } from '../../../config';
 import style from './newsList.module.css';
