@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 import axios from 'axios'
 
 import { URL } from '../../../config';
-import style from './newsList.module.css'
-
+import style from './newsList.module.css';
+import Button from '../Buttons/Buttons';
 
 export class NewsList extends Component {
 
@@ -32,7 +32,7 @@ export class NewsList extends Component {
       })
   }
   loadMore = ()=>{
-let end = this.state.end + this.state.amount
+      let end = this.state.end + this.state.amount;
 
     this.request(this.state.end, end)
   }
@@ -55,6 +55,7 @@ let end = this.state.end + this.state.amount
           <div>
             <div className={style.newsList_item}>
               <Link to={`/articles/${item.id}`}>
+                teams
                 <h2>{item.title}</h2>
               </Link>
 
@@ -84,7 +85,7 @@ let end = this.state.end + this.state.amount
 
         <Button
           type="loadmore"
-          loadMore={()=> this.loadMore()}
+          loadMore = {()=> this.loadMore()}
           cta="Load More News"
         />
         
