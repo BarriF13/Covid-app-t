@@ -72,7 +72,7 @@ let end = this.state.end + this.state.amount
 
 
   render() {
-    console.log(this.state.items);
+    // console.log(this.state.items);
     return (
       <div>
         <TransitionGroup
@@ -81,9 +81,13 @@ let end = this.state.end + this.state.amount
         >
           {this.renderNews(this.props.type)}
         </TransitionGroup>
-        <div onClick={()=> this.loadMore()}>
-          Load More
-        </div>
+
+        <Button
+          type="loadmore"
+          loadMore={()=> this.loadMore()}
+          cta="Load More News"
+        />
+        
       </div>
     )
   }
