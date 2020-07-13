@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import axios from 'axios';
-import { URL } from '../../../../config';
-
+// import axios from 'axios';
+// import { URL } from '../../../../config';
+import { firebaseLooper, firebaseHospitals, firebaseDB, firebaseVideos} from '../../../../firebase'
 import style from '../../article.module.css';
 import Header from './Header';
 import VideosRelated from './VideosRelated/videosRelated'
@@ -16,35 +16,60 @@ class VideoArticle extends Component {
   }
 
   componentWillMount() {
-    axios.get(`${URL}/videos/?id=${this.props.match.params.id}`)
-      .then(res => {
-        let article = res.data[0];
-        axios.get(`${URL}/hospitals?id=${article.hospital}`)
-          .then(res => {
-            this.setState({
-              article,
-              hospital: res.data
-            });
-            this.getRelated();
-          })
+    firebaseDB.ref(`videos/${this.props.match.params.id}`).once('value')
+    .then((snapshot)=>{
+      let article = snapshot.val();
+
+      firebaseHospitals.orderByChild('hospitalId').equalTo(article.hospital).once('value')
+      .then((snapshot)=>{
+        const hospital = firebaseLooper(snapshot)
+        this.setState({
+          article,
+          hospital
+        })
       })
+    })
+    // axios.get(`${URL}/videos/?id=${this.props.match.params.id}`)
+    //   .then(res => {
+    //     let article = res.data[0];
+    //     axios.get(`${URL}/hospitals?id=${article.hospital}`)
+    //       .then(res => {
+    //         this.setState({
+    //           article,
+    //           hospital: res.data
+    //         });
+    //         this.getRelated();
+    //       })
+    //   })
   }
 
   getRelated = () => {
-    // console.log(this.state);
-    axios.get(`${URL}/hospitals`)
-    .then(res => {
-      let hospitals = res.data
+    firebaseHospitals.once('value')
+    .then((snapshot)=>{
+      const hospitals = firebaseLooper(snapshot);
 
-      axios.get(`${URL}/videos?q=${this.state.hospital[0].city}&_limit=3`)
-      .then(res=> {
+      firebaseVideos.orderByChild('hospital').equalTo(this.state.article.hospital).limitToFirst(3).once('value').then((snapshot)=>{
+        const related = firebaseLooper(snapshot);
         this.setState({
           hospitals,
-          related:res.data
+           related
         })
       })
-
     })
+    // // console.log(this.state);
+    // axios.get(`${URL}/hospitals`)
+    // .then(res => {
+    //   let hospitals = res.data
+
+    //   axios.get(`${URL}/videos?q=${this.state.hospital[0].city}&_limit=3`)
+    //   .then(res=> {
+    //     this.setState({
+    //       hospitals,
+    //       related:res.data
+    //     })
+    //   })
+
+    // })
   }
   render() {
     // console.log(this.state.hospitals);

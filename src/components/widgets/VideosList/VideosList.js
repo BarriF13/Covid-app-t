@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import style from './videosList.module.css';
-import axios from 'axios';
-import { URL } from '../../../config';
+// import axios from 'axios';
+// import { URL } from '../../../config';
+import { firebaseHospitals, firebaseVideos, firebaseLooper } from '../../../firebase'
+
 import Button from '../Buttons/Buttons';
 import VideosListTemplate from './VideosListTemplate';
 export class VideosList extends Component {
@@ -19,22 +21,42 @@ export class VideosList extends Component {
   //making request to get videos
   request = (start, end) => {
     if (this.state.hospitals.length < 1) {
-      axios.get(`${URL}/hospitals`)
-        .then(res => {
+      firebaseHospitals.once('value')
+        .then((snapshot) => {
+          const hospitals = firebaseLooper(snapshot);
           this.setState({
-            hospitals: res.data
+            hospitals
           })
         })
+      // axios.get(`${URL}/hospitals`)
+      //   .then(res => {
+      //     this.setState({
+      //       hospitals: res.data
+      //     })
+      //   })
     }
-    axios.get(`${URL}/videos?_start=${start}&_end=${end}`)
-      //catching the promise
-      .then(res => {
-        this.setState({
-          videos: [...this.state.videos, ...res.data],
-          start,
-          end
-        })
+
+    firebaseVideos.orderByChild('id').startAt(start).endAt(end).once('value')
+    .then((snapshot) => {
+      const videos = firebaseLooper(snapshot);
+      this.setState({
+        videos: [...this.state.videos, ...videos],
+        start,
+        end
       })
+    })
+    .catch(e => {
+      console.log(e);
+    })
+    // axios.get(`${URL}/videos?_start=${start}&_end=${end}`)
+    //   //catching the promise
+    //   .then(res => {
+    //     this.setState({
+    //       videos: [...this.state.videos, ...res.data],
+    //       start,
+    //       end
+    //     })
+    //   })
   }
 
   renderTitle = () => {

@@ -1,803 +1,348 @@
 {
-    "articles":[
-        {
-            "id":1,
-            "hospital":3,
-            "title":"Coronavirus Jobs loss warnings aviation ignored' and anger in Leicester",
-            "image":"1.jpeg",
-            "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            "date":"10/12/2018",
-            "author":"John Secada",
-            "tags":["Knicks","Porzinguis"]
-        },
-        {
-            "id":2,
-            "hospital":4,
-            "title":"Nurse and midwife numbers jump by record amount",
-            "image":"2.jpeg",
-            "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-            "date":"10/12/2018",
-            "author":"John Secada",
-            "tags":["Knicks","Porzinguis"]
-        },
-        {
-            "id":3,
-            "hospital":3,
-            "title":"COVID19 trial progresses as cautious optimism grows for RNA vaccine",
-            "image":"3.jpeg",
-            "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-            "date":"10/12/2018",
-            "author":"John Secada",
-            "tags":["Knicks","Porzinguis"]
-        },
-        {
-            "id":4,
-            "hospital":6,
-            "title":"Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            "image":"4.jpeg",
-            "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-            "date":"10/12/2018",
-            "author":"John Secada",
-            "tags":["Knicks","Porzinguis"]
-        },
-        {
-            "id":5,
-            "hospital":8,
-            "title":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat",
-            "image":"15.jpeg",
-            "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-            "date":"10/12/2018",
-            "author":"John Secada",
-            "tags":["Knicks","Porzinguis"]
-        },
-        {
-            "id":6,
-            "hospital":7,
-            "title":"Sed ut perspiciatis unde omnis iste natus error",
-            "image":"5.jpeg",
-            "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-            "date":"10/12/2018",
-            "author":"John Secada",
-            "tags":["Knicks","Porzinguis"]
-        },
-        {
-            "id":7,
-            "hospital":10,
-            "title":"Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis",
-            "image":"16.jpeg",
-            "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-            "date":"10/12/2018",
-            "author":"John Secada",
-            "tags":["Knicks","Porzinguis"]
-        },
-        {
-            "id":8,
-            "hospital":6,
-            "title":"Et quasi architecto beatae vitae dicta sunt explicabo",
-            "image":"6.jpeg",
-            "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-            "date":"10/12/2018",
-            "author":"John Secada",
-            "tags":["Knicks","Porzinguis"]
-        },
-        {
-            "id":9,
-            "hospital":14,
-            "title":"Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit",
-            "image":"7.jpeg",
-            "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-            "date":"10/12/2018",
-            "author":"John Secada",
-            "tags":["Knicks","Porzinguis"]
-        },
-        {
-            "id":10,
-            "hospital":14,
-            "title":"Magni dolores eos qui ratione voluptatem sequi nesciunt.",
-            "image":"8.jpeg",
-            "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-            "date":"10/12/2018",
-            "author":"John Secada",
-            "tags":["Knicks","Porzinguis"]
-        },
-        {
-            "id":11,
-            "hospital":2,
-            "title":"Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet",
-            "image":"9.jpeg",
-            "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-            "date":"10/12/2018",
-            "author":"John Secada",
-            "tags":["Knicks","Porzinguis"]
-        },
-        {
-            "id":12,
-            "hospital":4,
-            "title":"Adipisci velit, sed quia non numquam eius modi tempora incidunt",
-            "image":"10.jpeg",
-            "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-            "date":"10/12/2018",
-            "author":"John Secada",
-            "tags":["Knicks","Porzinguis"]
-        },
-        {
-            "id":13,
-            "hospital":7,
-            "title":"Ut labore et dolore magnam aliquam quaerat voluptatem",
-            "image":"11.jpeg",
-            "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-            "date":"10/12/2018",
-            "author":"John Secada",
-            "tags":["Knicks","Porzinguis"]
-        },
-        {
-            "id":14,
-            "hospital":9,
-            "title":"Ut enim ad minima veniam, quis nostrum exercitationem ullam",
-            "image":"12.jpeg",
-            "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-            "date":"10/12/2018",
-            "author":"John Secada",
-            "tags":["Knicks","Porzinguis"]
-        },
-        {
-            "id":15,
-            "hospital":9,
-            "title":"Quis autem vel eum iure reprehenderit qui in ea voluptate velit",
-            "image":"13.jpeg",
-            "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-            "date":"10/12/2018",
-            "author":"John Secada",
-            "tags":["Knicks","Porzinguis"]
-        },
-        {
-            "id":16,
-            "hospital":1,
-            "title":"Esse quam nihil molestiae consequatur",
-            "image":"14.jpeg",
-            "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-            "date":"10/12/2018",
-            "author":"John Secada",
-            "tags":["Knicks","Porzinguis"]
-        },
-        {
-            "id":17,
-            "hospital":3,
-            "title":"At vero eos et accusamus et iusto odio dignissimos ducimus ",
-            "image":"5.jpeg",
-            "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-            "date":"10/12/2018",
-            "author":"John Secada",
-            "tags":["Knicks","Porzinguis"]
-        },
-        {
-            "id":18,
-            "hospital":4,
-            "title":"Qui blanditiis praesentium voluptatum deleniti atque corrupti quos",
-            "image":"6.jpeg",
-            "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-            "date":"10/12/2018",
-            "author":"John Secada",
-            "tags":["Knicks","Porzinguis"]
-        }
-    ],
-    "videos":[
-        {
-          "id":1,
-          "hospital":2,
-          "title":"Qui blanditiis praesentium voluptatum deleniti atque corrupti quos",
-          "image":"1.jpeg",
-          "url":"XKI0xlnMBZQ",
-          "date":"10/12/2018",
-          "tags":["Boston","Oklahoma"]
-        },
-        {
-          "id":2,
-          "hospital":8,
-          "title":"Sed ut perspiciatis unde omnis iste natus error sit",
-          "image":"2.jpeg",
-          "url":"XKI0xlnMBZQ",
-          "date":"10/12/2018",
-          "tags":["New York","Boston","Porzingis"]
-        },
-        {
-          "id":3,
-          "hospital":8,
-          "title":"Laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis",
-          "image":"3.jpeg",
-          "url":"XKI0xlnMBZQ",
-          "date":"10/12/2018",
-          "tags":["Portland","Miami"]
-        },
-        {
-          "id":4,
-          "hospital":2,
-          "title":"Qui blanditiis praesentium voluptatum deleniti atque corrupti quos",
-          "image":"4.jpeg",
-          "url":"XKI0xlnMBZQ",
-          "date":"10/12/2018",
-          "tags":["Boston","Oklahoma"]
-        },
-        {
-          "id":5,
-          "hospital":8,
-          "title":"Sed ut perspiciatis unde omnis iste natus error sit",
-          "image":"5.jpeg",
-          "url":"XKI0xlnMBZQ",
-          "date":"10/12/2018",
-          "tags":["New York","Boston","Porzingis"]
-        },
-        {
-          "id":6,
-          "hospital":8,
-          "title":"Laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis",
-          "image":"6.jpeg",
-          "url":"XKI0xlnMBZQ",
-          "date":"10/12/2018",
-          "tags":["Portland","Miami"]
-        },
-
-        {
-          "id":7,
-          "hospital":2,
-          "title":"Qui blanditiis praesentium voluptatum deleniti atque corrupti quos",
-          "image":"7.jpeg",
-          "url":"XKI0xlnMBZQ",
-          "date":"10/12/2018",
-          "tags":["Boston","Oklahoma"]
-        },
-        {
-          "id":8,
-          "hospital":8,
-          "title":"Sed ut perspiciatis unde omnis iste natus error sit",
-          "image":"8.jpeg",
-          "url":"XKI0xlnMBZQ",
-          "date":"10/12/2018",
-          "tags":["New York","Boston","Porzingis"]
-        },
-        {
-          "id":9,
-          "hospital":8,
-          "title":"Laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis",
-          "image":"9.jpeg",
-          "url":"XKI0xlnMBZQ",
-          "date":"10/12/2018",
-          "tags":["Portland","Miami"]
-        },
-        {
-          "id":10,
-          "hospital":2,
-          "title":"Qui blanditiis praesentium voluptatum deleniti atque corrupti quos",
-          "image":"10.jpeg",
-          "url":"XKI0xlnMBZQ",
-          "date":"10/12/2018",
-          "tags":["Boston","Oklahoma"]
-        },
-        {
-          "id":11,
-          "hospital":8,
-          "title":"Sed ut perspiciatis unde omnis iste natus error sit",
-          "image":"1.jpeg",
-          "url":"XKI0xlnMBZQ",
-          "date":"10/12/2018",
-          "tags":["New York","Boston","Porzingis"]
-        },
-        {
-          "id":12,
-          "hospital":8,
-          "title":"Laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis",
-          "image":"2.jpeg",
-          "url":"XKI0xlnMBZQ",
-          "date":"10/12/2018",
-          "tags":["Portland","Miami"]
-        },
-        {
-          "id":13,
-          "hospital":8,
-          "title":"Sed ut perspiciatis unde omnis iste natus error sit",
-          "image":"3.jpeg",
-          "url":"XKI0xlnMBZQ",
-          "date":"10/12/2018",
-          "tags":["New York","Boston","Porzingis"]
-        },
-        {
-          "id":14,
-          "hospital":8,
-          "title":"Laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis",
-          "image":"4.jpeg",
-          "url":"XKI0xlnMBZQ",
-          "date":"10/12/2018",
-          "tags":["Portland","Miami"]
-        },
-        {
-          "id":15,
-          "hospital":2,
-          "title":"Qui blanditiis praesentium voluptatum deleniti atque corrupti quos",
-          "image":"5.jpeg",
-          "url":"XKI0xlnMBZQ",
-          "date":"10/12/2018",
-          "tags":["Boston","Oklahoma"]
-        },
-        {
-          "id":16,
-          "hospital":8,
-          "title":"Sed ut perspiciatis unde omnis iste natus error sit",
-          "image":"6.jpeg",
-          "url":"XKI0xlnMBZQ",
-          "date":"10/12/2018",
-          "tags":["New York","Boston","Porzingis"]
-        },
-        {
-          "id":17,
-          "hospital":8,
-          "title":"Laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis",
-          "image":"7.jpeg",
-          "url":"XKI0xlnMBZQ",
-          "date":"10/12/2018",
-          "tags":["Portland","Miami"]
-        },
-        {
-          "id":18,
-          "hospital":2,
-          "title":"Qui blanditiis praesentium voluptatum deleniti atque corrupti quos",
-          "image":"8.jpeg",
-          "url":"XKI0xlnMBZQ",
-          "date":"10/12/2018",
-          "tags":["Boston","Oklahoma"]
-        },
-        {
-          "id":19,
-          "hospital":8,
-          "title":"Sed ut perspiciatis unde omnis iste natus error sit",
-          "image":"9.jpeg",
-          "url":"XKI0xlnMBZQ",
-          "date":"10/12/2018",
-          "tags":["New York","Boston","Porzingis"]
-        },
-        {
-          "id":20,
-          "hospital":8,
-          "title":"Laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis",
-          "image":"10.jpeg",
-          "url":"XKI0xlnMBZQ",
-          "date":"10/12/2018",
-          "tags":["Portland","Miami"]
-        }
-    ],
-    "hospitals": [
-        {
-          "id": 1,
-          "name": "Hawks",
-          "city": "Atlanta",
-          "logo": "1.png",
-          "poll": "false",
-          "count": 0,
-          "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
-          "stats":[
-            {
-              "wins":23,
-              "defeats":12
-            }
-          ]
-        },
-        {
-          "id": 2,
-          "name": "Celtics",
-          "city": "Boston",
-          "logo": "2.png",
-          "poll": "false",
-          "count": 0,
-          "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
-          "stats":[
-            {
-              "wins":23,
-              "defeats":12
-            }
-          ]
-        },
-        {
-          "id": 3,
-          "name": "Nets",
-          "city": "New Jersey",
-          "logo": "3.png",
-          "poll": "false",
-          "count": 0,
-          "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
-          "stats":[
-            {
-              "wins":23,
-              "defeats":12
-            }
-          ]
-        },
-        {
-          "id": 4,
-          "name": "Hornets",
-          "city": "Charlotte",
-          "logo": "4.png",
-          "poll": "false",
-          "count": 0,
-          "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
-          "stats":[
-            {
-              "wins":23,
-              "defeats":12
-            }
-          ]
-        },
-        {
-          "id": 5,
-          "name": "Bulls",
-          "city": "Chicago",
-          "logo": "5.png",
-          "poll": "false",
-          "count": 0,
-          "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
-          "stats":[
-            {
-              "wins":23,
-              "defeats":12
-            }
-          ]
-        },
-        {
-          "id": 6,
-          "name": "Cavaliers",
-          "city": "Cleveland",
-          "logo": "6.png",
-          "poll": "true",
-          "count": 2365,
-          "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
-          "stats":[
-            {
-              "wins":23,
-              "defeats":12
-            }
-          ]
-        },
-        {
-          "id": 7,
-          "name": "Mavericks",
-          "city": "Dallas",
-          "logo": "7.png",
-          "poll": "false",
-          "count": 0,
-          "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
-          "stats":[
-            {
-              "wins":23,
-              "defeats":12
-            }
-          ]
-        },
-        {
-          "id": 8,
-          "name": "Nuggets",
-          "logo": "8.png",
-          "poll": "false",
-          "count": 0,
-          "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
-          "stats":[
-            {
-              "wins":23,
-              "defeats":12
-            }
-          ]
-        },
-        {
-          "id": 9,
-          "name": "Pistons",
-          "city": "Detroit",
-          "logo": "9.png",
-          "poll": "false",
-          "count": 0,
-          "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
-          "stats":[
-            {
-              "wins":23,
-              "defeats":12
-            }
-          ]
-        },
-        {
-          "id": 10,
-          "name": "Warriors",
-          "city": "Golden State",
-          "logo": "10.png",
-          "poll": "true",
-          "count": 2365,
-          "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
-          "stats":[
-            {
-              "wins":23,
-              "defeats":12
-            }
-          ]
-        },
-        {
-          "id": 11,
-          "name": "Rockets",
-          "city": "Houston",
-          "logo": "11.png",
-          "poll": "false",
-          "count": 0,
-          "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
-          "stats":[
-            {
-              "wins":23,
-              "defeats":12
-            }
-          ]
-        },
-        {
-          "id": 12,
-          "name": "Pacers",
-          "city": "Indiana",
-          "logo": "12.png",
-          "poll": "false",
-          "count": 0,
-          "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
-          "stats":[
-            {
-              "wins":23,
-              "defeats":12
-            }
-          ]
-        },
-        {
-          "id": 13,
-          "name": "Clippers",
-          "city": "Los Angeles",
-          "logo": "13.png",
-          "poll": "false",
-          "count": 0,
-          "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
-          "stats":[
-            {
-              "wins":23,
-              "defeats":12
-            }
-          ]
-        },
-        {
-          "id": 14,
-          "name": "Lakers",
-          "city": "Los Angeles",
-          "logo": "14.png",
-          "poll": "false",
-          "count": 0,
-          "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
-          "stats":[
-            {
-              "wins":23,
-              "defeats":12
-            }
-          ]
-        },
-        {
-          "id": 15,
-          "name": "Grizzlies",
-          "city": "Vancouver",
-          "logo": "15.png",
-          "poll": "false",
-          "count": 0,
-          "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
-          "stats":[
-            {
-              "wins":23,
-              "defeats":12
-            }
-          ]
-        },
-        {
-          "id": 16,
-          "name": "Heat",
-          "city": "Miami",
-          "logo": "16.png",
-          "poll": "false",
-          "count": 0,
-          "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
-          "stats":[
-            {
-              "wins":23,
-              "defeats":12
-            }
-          ]
-        },
-        {
-          "id": 17,
-          "name": "Bucks",
-          "city": "Milwakee",
-          "logo": "17.png",
-          "poll": "false",
-          "count": 0,
-          "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
-          "stats":[
-            {
-              "wins":23,
-              "defeats":12
-            }
-          ]
-        },
-        {
-          "id": 18,
-          "name": "Timberwolves",
-          "city": "Minnesota",
-          "logo": "18.png",
-          "poll": "false",
-          "count": 0,
-          "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
-          "stats":[
-            {
-              "wins":23,
-              "defeats":12
-            }
-          ]
-        },
-        {
-          "id": 19,
-          "name": "Pelicans",
-          "city": "New Orleans",
-          "logo": "19.png",
-          "poll": "false",
-          "count": 0,
-          "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
-          "stats":[
-            {
-              "wins":23,
-              "defeats":12
-            }
-          ]
-        },
-        {
-          "id": 20,
-          "name": "knicks",
-          "city": "New York",
-          "logo": "20.png",
-          "poll": "true",
-          "count": 13,
-          "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
-          "stats":[
-            {
-              "wins":23,
-              "defeats":12
-            }
-          ]
-        },
-        {
-          "id": 21,
-          "name": "Thunder",
-          "city": "Oklahoma",
-          "logo": "21.png",
-          "poll": "false",
-          "count": 0,
-          "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
-          "stats":[
-            {
-              "wins":23,
-              "defeats":12
-            }
-          ]
-        },
-        {
-          "id": 22,
-          "name": "Magic",
-          "city": "Orlando",
-          "logo": "22.png",
-          "poll": "false",
-          "count": 0,
-          "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
-          "stats":[
-            {
-              "wins":23,
-              "defeats":12
-            }
-          ]
-        },
-        {
-          "id": 23,
-          "name": "76ers",
-          "city": "Philadelphia",
-          "logo": "23.png",
-          "poll": "false",
-          "count": 0,
-          "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
-          "stats":[
-            {
-              "wins":23,
-              "defeats":12
-            }
-          ]
-        },
-        {
-          "id": 24,
-          "name": "Spurs",
-          "city": "San Antonio",
-          "logo": "24.png",
-          "poll": "false",
-          "count": 0,
-          "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
-          "stats":[
-            {
-              "wins":23,
-              "defeats":12
-            }
-          ]
-        },
-        {
-          "id": 25,
-          "name": "Suns",
-          "city": "Phoenix",
-          "logo": "25.png",
-          "poll": "false",
-          "count": 0,
-          "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
-          "stats":[
-            {
-              "wins":23,
-              "defeats":12
-            }
-          ]
-        },
-        {
-          "id": 26,
-          "name": "Kings",
-          "city": "Sacramento",
-          "logo": "26.png",
-          "poll": "false",
-          "count": 0,
-          "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
-          "stats":[
-            {
-              "wins":23,
-              "defeats":12
-            }
-          ]
-        },
-        {
-          "id": 27,
-          "name": "Raptors",
-          "city": "Toronto",
-          "logo": "27.png",
-          "poll": "false",
-          "count": 0,
-          "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
-          "stats":[
-            {
-              "wins":23,
-              "defeats":12
-            }
-          ]
-        },
-        {
-          "id": 28,
-          "name": "Jazz",
-          "city": "Utah",
-          "logo": "28.png",
-          "poll": "false",
-          "count": 0,
-          "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
-          "stats":[
-            {
-              "wins":23,
-              "defeats":12
-            }
-          ]
-        },
-        {
-          "id": 29,
-          "name": "Blazers",
-          "city": "Portland",
-          "logo": "29.png",
-          "poll": "false",
-          "count": 0,
-          "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
-          "stats":[
-            {
-              "wins":23,
-              "defeats":12
-            }
-          ]
-        }
-      ]
+  "articles" : {
+    "-L3ZeHO-pRZQZJee9Hw2" : {
+      "author" : "Aldo Moro",
+      "body" : "The present outbreak caused by SARS-CoV-2, an influenza virus with neurotropic potential, presents with neurological manifestations in a large proportion of the affected individuals. Disorders of the central and peripheral nervous system are all present, while stroke, ataxia, seizures, and depressed level of consciousness are more common in severely affected patients. People with these severe complications are most likely elderly with medical comorbidities, especially hypertension and other vascular risk factors. However, postinfectious complications are also expected. Neurological disorders as sequelae of influenza viruses have been repeatedly documented in the past and include symptoms, signs, and diseases occurring during the acute phase and, not rarely, during follow-up. ",
+      "date" : 1516738522076,
+      "id" : 0,
+      "image" : "1.jpeg",
+      "tags" : [ "Tricase", "Italy" ],
+      "hospital" : 3,
+      "title" : "Infection and Neurological Complications."
+    },
+    "-L3ZeHO8pFn34wGJMuWu" : {
+      "author" : "Jiménez-Blanco ",
+      "body" : "Background: Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) has emerged as a new threat to healthcare systems. In this setting, heart failure units have faced an enormous challenge: taking care of their patients while at the same time avoiding patients’ visits to the hospital. Objective: The aim of this study was to evaluate the results of a follow-up protocol established in an advanced heart failure unit at a single center in Spain during the coronavirus disease 2019 (COVID-19) pandemic.",
+      "date" : 1516738522114,
+      "id" : 1,
+      "image" : "2.jpeg",
+      "tags" : [ "Knicks", "Porzinguis" ],
+      "hospital" : 4,
+      "title" : "Heart Failure in the Time of COVID-19"
+    },
+    "-L3ZeHO9M4m7u6vqDdkt" : {
+      "author" : "Haehner A",
+      "body" : "Introduction: Recent reports suggest that sudden smell loss might be a symptom of SARS-CoV-2 infection. The aim of this study was to investigate the frequency of olfactory loss in an outpatient population who presented to a coronavirus testing center during a 2-week period and to evaluate the diagnostic value of the symptom “sudden smell loss” for screening procedures. Methods: In this cross-sectional controlled cohort study, 500 patients who presented with symptoms of a common cold to a corona testing center and fulfilled corona testing criteria completed a standardized diagnostic questionnaire which included the patients’ main symptoms, time course, and an additional self-assessment of the patients’ current smell, taste function, and nasal breathing compared to the level before the onset of symptoms.",
+      "date" : 1516738522119,
+      "id" : 2,
+      "image" : "3.jpeg",
+      "tags" : [ "Knicks", "Porzinguis" ],
+      "hospital" : 3,
+      "title" : "Predictive Value of Sudden Olfactory Loss in the Diagnosis of COVID-19"
+    },
+    "-L3ZeHOAnb6wiMmdYEwf" : {
+      "author" : "Cardona",
+      "body" : "The large scale and rapid spread of the current COVID-19 pandemic has changed the way hospitals and other health services operate. Opportunities for patient-centered decision-making at the end of life are being jeopardized by a scarcity of health system resources. In response, the traditional doctor-initiated advanced care planning (ACP) for critical illness may also need to be readjusted.",
+      "date" : 1516738522122,
+      "id" : 3,
+      "image" : "4.jpeg",
+      "tags" : [ "Knicks", "Porzinguis" ],
+      "hospital" : 6,
+      "title" : "The Crucial Role of Nurses and Social Workers ."
+    },
+    "-L3ZeHOB2BwEHI21gSYF" : {
+      "author" : "Jonathan Zipursk",
+      "body" : "The coronavirus disease 2019 (COVID-19) pandemic has led to unparalleled changes in the provision of care to obstetric patients. In spite of rapid scientific advancement, much uncertainty remains about how to care for pregnant women and their infants during the pandemic. In this editorial, we discuss three emerging topics concerning COVID-19 and pregnancy: (1) rapidly evolving guidelines for maternal and neonatal care; (2) mother to fetus transmission of Severe Acute Respiratory Syndrome associated Coronavirus-2 (SARS-CoV-2); and (3) exclusion of pregnant women from randomized trials.",
+      "date" : 1516738522124,
+      "id" : 4,
+      "image" : "15.jpeg",
+      "tags" : [ "Knicks", "Porzinguis" ],
+      "hospital" : 8,
+      "title" : "COVID-19 in pregnancy: Maintaining clarity with expanding evidence"
+    },
+    "-L3ZeHOC87HYtAKetOJ0" : {
+      "author" : "John Secada",
+      "body" : "While the reviews in this Special Collection assess interventions that are referenced in the WHO interim guidance, the direct applicability of the evidence may be limited by the low proportion of people with viral infection enrolled in the primary studies. Many reviews in the collection have associated Cochrane Clinical Answers.",
+      "date" : 1516738522125,
+      "id" : 5,
+      "image" : "5.jpeg",
+      "tags" : [ "Knicks", "Porzinguis" ],
+      "hospital" : 7,
+      "title" : "Coronavirus (COVID-19): evidence relevant to critical care"
+    },
+    "-L3ZeHODyWIoWk9jyQMz" : {
+      "author" : "Le page",
+      "body" : "Over 200 scientists have called for the world to take more precautions against the airborne transmission of the coronavirus. While the virus is known to spread through the air via large droplets produced when people cough or sneeze, they say it can also be spread by smaller droplets known as aerosols that can linger in the air. Preventing this means ventilating buildings and avoiding overcrowding.",
+      "date" : 1516738522126,
+      "id" : 6,
+      "image" : "16.jpeg",
+      "tags" : [ "Knicks", "Porzinguis" ],
+      "hospital" : 10,
+      "title" : "How to stop the coronavirus"
+    },
+    "-L3ZeHOE0GXgWXG6qAaP" : {
+      "author" : "John Vulvue",
+      "body" : "Morawska and others have made similar calls in recent months, but it is especially important to address the issue now that people in many countries are returning to workplaces, restaurants and pubs, says signatory Julian Tang at the University of Leicester in the UK. Improving ventilation will reduce the risk, he says. “You can’t rely on people wearing masks.”",
+      "date" : 1516738522127,
+      "id" : 7,
+      "image" : "6.jpeg",
+      "tags" : [ "Knicks", "Porzinguis" ],
+      "hospital" : 6,
+      "title" : "Risk of airborne coronavirus spread being underplayed"
+    },
+    "-L3ZeHOE0GXgWXG6qAaQ" : {
+      "author" : "Clair Wilson",
+      "body" : "On 11 May, people in England were allowed to go outside to exercise multiple times a day and certain groups were encouraged to return to work. June saw the reopening of non-essential shops, certain year groups returning to school and households mixing outside. On Saturday, social distancing guidelines were reduced and numerous indoor hospitality venues reopened.",
+      "date" : 1516738522138,
+      "id" : 8,
+      "image" : "7.jpeg",
+      "tags" : [ "Knicks", "Porzinguis" ],
+      "hospital" : 14,
+      "title" : "Why hasn't the UK seen a second wave of the coronavirus"
+    },
+    "-L3ZeHOE0GXgWXG6qAaR" : {
+      "author" : "John Secada",
+      "body" : "THE lockdowns imposed in many countries in response to the coronavirus have caused a dramatic reduction in our carbon emissions. But there is already evidence that this won’t last. So how can governments build on this moment, as they plan for economic recovery, to make progress towards net-zero targets?",
+      "date" : 1516738522138,
+      "id" : 9,
+      "image" : "8.jpeg",
+      "tags" : [ "Knicks", "Porzinguis" ],
+      "hospital" : 14,
+      "title" : "We can fix the climate as we reboot the economy."
+    },
+    "-L3ZeHOFW7vSL_6bpzMo" : {
+      "author" : "Nika Fleming",
+      "body" : "Governments across the world now know the importance of being prepared for fast-moving international public health emergencies. Diseases caused by viruses capable of hopping from animals to humans pose serious threats, but are by no means the only dangers we need to take seriously.",
+      "date" : 1516738522150,
+      "id" : 10,
+      "image" : "9.jpeg",
+      "tags" : [ "Knicks", "Porzinguis" ],
+      "hospital" : 2,
+      "title" : "The four major public health threats we need to act on now"
+    }
+  },
+  "hospitals" : {
+    "-L0SCPkh25wb-yfn5vtp" : {
+      "city" : "London",
+      "count" : 0,
+      "description" : "We offer a wide range of specialist and general hospital services at our two main hospital sites, Chelsea and Westminster Hospital and West Middlesex University Hospital. We also provide community care for a range of services, including our award winning sexual health clinics across London.",
+      "id" : 0,
+      "logo" : "1.png",
+      "name" : "Chelsea and Westminster",
+      "poll" : "false",
+      "stats" : [ {
+        "death" : 12,
+        "infected" : 23
+      } ],
+      "hospitalId" : 0
+    },
+    "-L0SCPkquCU90-lxxR2b" : {
+      "city" : "London",
+      "count" : 0,
+      "description" : "We are an NHS Trust of 10,000 people, providing care for around a million people every year, in our five hospitals and a growing number of community services in north west London.  We have a rich heritage and an ambitious vision for the future of our patients and local communities.  We want you to know all about who we are, what we do and where we are heading.",
+      "id" : 1,
+      "logo" : "2.png",
+      "name" : "Charing Cross",
+      "poll" : "false",
+      "stats" : [ {
+        "death" : 12,
+        "infected" : 23
+      } ],
+      "hospitalId" : 1
+    },
+    "-L0SCPkt1wy0f_sG3uTm" : {
+      "city" : "London",
+      "count" : 0,
+      "description" : "At Queen Mary’s Hospital (QMH) in Sidcup there is a new and innovative approach to providing healthcare. On 1 October 2013 the QMH site transferred to Oxleas NHS Foundation Trust – an NHS organisation with a strong track record of well-managed finances, developing high quality buildings and providing high quality care.",
+      "id" : 2,
+      "logo" : "3.png",
+      "name" : "Queen Mary's",
+      "poll" : "false",
+      "stats" : [ {
+        "death" : 12,
+        "infected" : 23
+      } ],
+      "hospitalId" : 2
+    },
+    "-L0SCPkvSMKlMxZ8ZEgB" : {
+      "city" : "London",
+      "count" : 0,
+      "description" : "Located in London, in a peaceful and secluded part of Southgate, Priory Hospital North London is set within a striking Grade I listed building, overlooking beautiful parklands. It is one of the UK’s leading centres for the treatment of a wide range of mental health difficulties including addictions, depression, anxiety, stress and obsessive compulsive disorder (OCD).",
+      "id" : 3,
+      "logo" : "4.png",
+      "name" : "Priory",
+      "poll" : "false",
+      "stats" : [ {
+        "death" : 12,
+        "infected" : 23
+      } ],
+      "hospitalId" : 3
+    },
+    "-L0SCPkxSrvjmhr6_fJ2" : {
+      "city" : "London",
+      "count" : 0,
+      "description" : "We support staff, patients and the surrounding communities of Imperial College Healthcare NHS Trust. In line with the charity’s strategic aims, the grants programme provides funding and support to projects that strive to achieve great science, excellent patient care and healthier communities.",
+      "id" : 4,
+      "logo" : "5.png",
+      "name" : "Hammersmith",
+      "poll" : "false",
+      "stats" : [ {
+        "death" : 12,
+        "infected" : 23
+      } ],
+      "hospitalId" : 4
+    },
+    "-L0SCPky0Onm4pI0r01j" : {
+      "city" : "North Yorkshire",
+      "count" : 2365,
+      "description" : "We believe it's important that people engage with their health, care and wellbeing so they can stay healthy and help manage any long-term health conditions.",
+      "id" : 5,
+      "logo" : "6.png",
+      "name" : "Alfred Bean",
+      "poll" : "true",
+      "stats" : [ {
+        "death" : 12,
+        "infected" : 23
+      } ],
+      "hospitalId" : 5
+    },
+    "-L0SCPl-BgSpB-VMmybP" : {
+      "city" : "Whitby",
+      "count" : 0,
+      "description" : "Whitby Hospital is a Community Hospital providing inpatient, outpatient and community services to the town of Whitby and surrounding area.The Hospital is located in the centre of town, opposite the Police Station. It is a short, although uphill, walk from the town centre, rail and bus stations.",
+      "id" : 6,
+      "logo" : "7.png",
+      "name" : "Whitby",
+      "poll" : "false",
+      "stats" : [ {
+        "death" : 12,
+        "infected" : 23
+      } ],
+      "hospitalId" : 6
+    },
+    "-L0SCPl0FXj_iCtXb5C0" : {
+      "city" : "Driffield",
+      "count" : 0,
+      "description" : "As the UK opens up we look forward to supporting your journey to health and wellbeing.We have been busy making changes to ensure that you feel safe from the moment you book your appointment to the time your treatment is complete.",
+      "id" : 7,
+      "logo" : "8.png",
+      "name" : "BMI The Duchy",
+      "poll" : "false",
+      "stats" : [ {
+        "death" : 12,
+        "infected" : 23
+      } ],
+      "hospitalId" : 7
+    },
+    "-L0SCPl21rLJS9z5iTK8" : {
+      "city" : "Barnsley",
+      "count" : 0,
+      "description" : "The 500 bed hospital was built in the 1970s and serves a population of over a quarter of a million people in the Barnsley area.Today, it continues to provide a full range of district hospital services to the local community and surrounding area.",
+      "id" : 8,
+      "logo" : "9.png",
+      "name" : "Barnsley",
+      "poll" : "false",
+      "stats" : [ {
+        "death" : 12,
+        "infected" : 23
+      } ],
+      "hospitalId" : 8
+    },
+    "-L0SCPl4Yr3kwi5nfTjE" : {
+      "city" : "Keighley",
+      "count" : 2365,
+      "description" : "Airedale NHS Foundation Trust is an award winning NHS hospital and community services trust providing high quality, personalised, acute, elective, specialist and community care for a population of over 200,000 people from a widespread area covering 700 square miles within Yorkshire and Lancashire – stretching as far as the Yorkshire Dales and the National Park in North Yorkshire, reaching areas of North Bradford and Guiseley in West Yorkshire and extending into Colne and Pendle in the East of Lancashire.",
+      "id" : 9,
+      "logo" : "10.png",
+      "name" : "Airedale General",
+      "poll" : "true",
+      "stats" : [ {
+        "death" : 12,
+        "infected" : 23
+      } ],
+      "hospitalId" : 9
+    }
+  },
+  "videos" : {
+    "-L0Qrfg8GT1yZO8vLh0u" : {
+      "date" : 1513369811916,
+      "id" : 0,
+      "image" : "1.jpeg",
+      "tags" : [ "London", "Keighley" ],
+      "hospital" : 2,
+      "title" : "Coronavirus intensive care: inside a London hospital as doctors fight to save lives",
+      "url" : "jrfRs0WeShU"
+    },
+    "-L0QrfgEFN5biFK4N-58" : {
+      "date" : 1513369811971,
+      "id" : 1,
+      "image" : "2.jpeg",
+      "tags" : [ "North Yorkshire", "London", "Keighley" ],
+      "hospital" : 8,
+      "title" : "Coronavirus: How UK hospitals are protecting BAME staff from COVID-19",
+      "url" : "KQbOYbndTAs"
+    },
+    "-L0QrfgGArs2TKplmF7L" : {
+      "date" : 1513369811975,
+      "id" : 2,
+      "image" : "3.jpeg",
+      "tags" : [ "Whitby", "Barnsley" ],
+      "hospital" : 8,
+      "title" : "Inside a coronavirus intensive care ward",
+      "url" : "8uc9GgLkuHA"
+    },
+    "-L0QrfgHIQkBU_5TVKZE" : {
+      "date" : 1513369811978,
+      "id" : 3,
+      "image" : "4.jpeg",
+      "tags" : [ "London", "Barnsley" ],
+      "hospital" : 2,
+      "title" : "Coronavirus: inside a UK hospital where tough choices are made every minute",
+      "url" : "Wwmzvqeowds"
+    },
+    "-L0QrfgHIQkBU_5TVKZF" : {
+      "date" : 1513369811979,
+      "id" : 4,
+      "image" : "5.jpeg",
+      "tags" : [ "North Yorkshire", "Keighley", "London" ],
+      "hospital" : 8,
+      "title" : "Treating Coronavirus: A Day Inside Houston Methodist’s Highly Infectious Disease Unit (HIDU)",
+      "url" : "N8UB5T_fo3Y"
+    },
+    "-L0QrfgIBRDsajBCHtNz" : {
+      "date" : 1513369811987,
+      "id" : 5,
+      "image" : "6.jpeg",
+      "tags" : [ "Whitby", "Barnsley" ],
+      "hospital" : 8,
+      "title" : "UK hospital crisis: Treatment for non-COVID-19 patients on hold",
+      "url" : "XyKfeFe5Ozs"
+    },
+    "-L0QrfgIBRDsajBCHtO-" : {
+      "date" : 1513369811998,
+      "id" : 6,
+      "image" : "7.jpeg",
+      "tags" : [ "London", "Barnsley" ],
+      "hospital" : 2,
+      "title" : "Organ Donor Remembered Through Honor Walk",
+      "url" : "HSTodMEqxOM"
+    },
+    "-L0QrfgJv1-5y5QY0kGA" : {
+      "date" : 1513369812063,
+      "id" : 7,
+      "image" : "8.jpeg",
+      "tags" : [ "North Yorkshire", "London", "Keighley" ],
+      "hospital" : 8,
+      "title" : "Gwen's Tri-City Medical Center Honor Walk, October 2019",
+      "url" : "zwe9-x6FSXU"
+    },
+    "-L0QrfgJv1-5y5QY0kGB" : {
+      "date" : 1513369812064,
+      "id" : 8,
+      "image" : "9.jpeg",
+      "tags" : [ "Whitby", "Barnsley" ],
+      "hospital" : 8,
+      "title" : "NHS doctor suffering from COVID-19 describes feeling 'terrible aching muscles and bones",
+      "url" : "Yc1WmUe1Rog"
+    },
+    "-L0QrfgKE_U8teSjbh0W" : {
+      "date" : 1513369812065,
+      "id" : 9,
+      "image" : "10.jpeg",
+      "tags" : [ "London", "Keighley" ],
+      "hospital" : 2,
+      "title" : "COVID-19: Tenth patient dies as UK coronavirus cases hit 590",
+      "url" : "1xpEt20PPbQ"
+    }
+  }
 }

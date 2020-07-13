@@ -22,7 +22,7 @@ const hospitalInfo = (props) =>   (
       </div>
       <div>
         <strong>
-          Rate {props.hospital.stats[0].wins}- Death {props.hospital.stats[0].defeats}
+          Infected: {props.hospital.stats[0].infected} - Death: {props.hospital.stats[0].death}
         </strong>
       </div>
     </div>

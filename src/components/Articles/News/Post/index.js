@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import axios from 'axios';
-import { URL } from '../../../../config'
-
+// import axios from 'axios';
+// import { URL } from '../../../../config'
+import {firebaseLooper, firebaseHospitals, firebaseDB} from '../../../../firebase'
 import style from '../../article.module.css';
 import Header from './Header';
 export class NewArticles extends Component {
@@ -11,17 +11,36 @@ export class NewArticles extends Component {
 
   }
   componentWillMount() {
-    axios.get(`${URL}/articles/?id=${this.props.match.params.id}`)
-      .then(res => {
-        let article = res.data[0];
-        axios.get(`${URL}/hospitals?id=${article.hospital}`)
-          .then(res => {
-            this.setState({
-              article,
-              hospital: res.data
-            })
-          })
+    firebaseDB.ref(`articles/${this.props.match.params.id}`).once('value')
+    .then((snapshot)=>{
+      let article = snapshot.val();
+
+      firebaseHospitals.orderByChild('hospitalId').equalTo(article.hospital).once('value')
+      .then((snapshot)=>{
+        const hospital = firebaseLooper(snapshot)
+        this.setState({
+          article,
+          hospital
+        })
       })
+
+    })
+
+
+
+
+
+    // axios.get(`${URL}/articles/?id=${this.props.match.params.id}`)
+    //   .then(res => {
+    //     let article = res.data[0];
+    //     axios.get(`${URL}/hospitals?id=${article.hospital}`)
+    //       .then(res => {
+    //         this.setState({
+    //           article,
+    //           hospital: res.data
+    //         })
+    //       })
+    //   })
   }
   render() {
     const article = this.state.article;
@@ -38,9 +57,9 @@ export class NewArticles extends Component {
             <h1>{article.title}</h1>
               <div className={style.articleImage}
                     style={{
-                    background: `url('/images/articles/1.jpeg')`
+                    background: `url('/images/articles/${article.image}')`
                     }}
-          >{article.image}</div>
+          ></div>
             <div className={style.articleText}>
               {article.body}
             </div>
