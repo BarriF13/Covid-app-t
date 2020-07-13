@@ -1,9 +1,9 @@
 import React from 'react';
 import style from './siteNav.module.css';
-import { Link } from 'react-router-dom'
+import { Link , withRouter } from 'react-router-dom'
 
 import FontAwesome from 'react-fontawesome';
-
+import {firebase} from '../../../firebase'
 
 const SiteNavItems = (props) => {
   console.log(props);
@@ -72,7 +72,15 @@ const SiteNavItems = (props) => {
       if (item.link === '/sign-out') {
         template = (
           <div key={i}
-            className={item.type}>
+            className={item.type}
+            onClick={ ()=>{
+              firebase.auth().signOut()
+              .then(()=>{
+                props.history.push('/')
+              })
+              }
+            }
+            >
 
             <FontAwesome name={item.icon} />
             {item.text}
@@ -103,4 +111,4 @@ const SiteNavItems = (props) => {
     </div>
   )
 }
-export default SiteNavItems;
+export default withRouter(SiteNavItems) ;

@@ -1,0 +1,33 @@
+.postContainer{
+  width: 80%;
+  margin: 0 auto;
+  height: 100vh;
+  padding-top: 50px;
+  
+
+}
+.postContainer h2 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.postContainer input{
+  font-size: 1rem;
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: none;
+
+}
+.postContainer button {
+  background-color: rgb(236, 130, 130);
+  font-size: 1rem;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  margin: 10px;
+
+}

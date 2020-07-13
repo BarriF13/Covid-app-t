@@ -91,7 +91,6 @@ validate =(element) =>{
   }
  
   
-
   if(element.validation.required){
     const valid = element.value.trim() !== '';
     const message = `${!valid? 'This field is required': ''}`;
