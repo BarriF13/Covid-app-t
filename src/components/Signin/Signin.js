@@ -58,20 +58,53 @@ export class SignIn extends Component {
       ...newFormData[element.id] //email
     }
     newElement.value = element.e.target.value;
+    if(element.blur){
+      let validData = this.validate(newElement);
+      // console.log(validData);
+
+      newElement.valid= validData[0];
+      newElement.validationMessage =validData[1];
+    }
+    newElement.touched = element.blur;
     newFormData[element.id] = newElement; 
+    console.log();
      
     this.setState({
       formData: newFormData
     })
   }
 
+validate =(element) =>{
+  let error = [true,''];
 
+  if(element.validation.email){
+    const valid = /\S+@\S+\.\S+/.test(element.value);
+    const message = `${!valid? 'Must be a valid email': ''}`;
+    error = !valid ?[valid,message] :error ;
+  }
+
+  if(element.validation.password){
+    const valid = element.value.length >= 5;
+    const message = `${!valid? 'Must have at least 5 character': ''}`;
+    error = !valid ?[valid,message] :error ;
+  }
+ 
+  
+
+  if(element.validation.required){
+    const valid = element.value.trim() !== '';
+    const message = `${!valid? 'This field is required': ''}`;
+    error = !valid ?[valid,message] :error ;
+  }
+  return error;
+}
 
 
   render() {
     return (
       <div className={style.logContainer}>
         <form action="">
+          <h2>Register / Login</h2>
         <FormField
           id={'email'}
           formData={this.state.formData.email}

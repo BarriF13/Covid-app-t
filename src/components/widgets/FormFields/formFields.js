@@ -6,7 +6,20 @@ import style from './formFields.module.css'
 
 const FormField = ({ formData, change, id }) => {
 
+  const showError =()=>{
+    let errorMessage = null;
+    if(formData.validation && !formData.valid){
+      errorMessage = (
+        <div className={style.labelError}>
+          {formData.validationMessage}
+        </div>
+      )
+    }
 
+
+
+    return errorMessage;
+  }
   const renderTemplate = () => {
 
     let formTemplate = null;
@@ -22,6 +35,7 @@ const FormField = ({ formData, change, id }) => {
            onChange={(e)=>change({e , id, blur:false})}
            
            />
+           {showError() }
           </div>
         )
         break;
