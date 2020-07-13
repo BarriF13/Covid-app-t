@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import FormField from '../widgets/FormFields/formFields'
-import style from './dashboard.module.css'
+import style from './dashboard.module.css';
+
+import { firebaseHospitals } from '../../firebase'
 
 import { Editor } from 'react-draft-wysiwyg';
 import { EditorState, convertFromRaw, convertToRaw } from 'draft-js';
@@ -49,8 +51,48 @@ export class Dashboard extends Component {
         element: 'texteditor',
         value: '',
         valid: true
+      },
+      hospitals: {
+        element: 'select',
+        value: '',
+        config: {
+          name: 'hospitals_input',
+          options: []
+        },
+        validation: {
+          required: true
+        },
+        valid: false,
+        touched: false,
+        validationMessage: ''
       }
     }
+  }
+  componentDidMount(){
+    this.loadHospitals()
+  }
+  loadHospitals = () =>{
+    firebaseHospitals.once('value')
+    .then((snapshot)=>{
+      let hospitals =[];
+
+      snapshot.forEach((childSnapshot) =>{
+        hospitals.push({
+          id:childSnapshot.val().hospitalId,
+          name:childSnapshot.val().city,
+        })
+      })
+      const newFormData = {...this.state.formData}
+      const newElement = {...newFormData['hospitals']}
+      newElement.config.options = hospitals;
+      newFormData['hospitals'] = newElement;
+      // console.log(newFormData);
+
+      this.setState({
+        formData: newFormData
+      })
+
+    })
   }
   updateForm = (element, content = '') => {
     const newFormData = {
@@ -105,7 +147,7 @@ export class Dashboard extends Component {
       formIsValid = this.state.formData[key].valid && formIsValid;
     }
 
-      console.log(dataToSubmit);
+    console.log(dataToSubmit);
     if (formIsValid) {
       console.log('Submit post');
     } else {
@@ -140,7 +182,7 @@ export class Dashboard extends Component {
     let html = stateToHTML(contentState)
     // console.log(html);
 
-    this.updateForm({ id:'body' }, html)
+    this.updateForm({ id: 'body' }, html)
 
     this.setState({
       editorState
@@ -163,7 +205,7 @@ export class Dashboard extends Component {
               formData={this.state.formData.title}
               change={(element) => this.updateForm(element)}
             />
-           
+
 
             <Editor
               editorState={this.state.editorState}
@@ -171,7 +213,11 @@ export class Dashboard extends Component {
               editorClassName="myEditor-editor"
               onEditorStateChange={this.onEditorStateChange}
             />
-
+            <FormField
+              id={'hospitals'}
+              formData={this.state.formData.hospitals}
+              change={(element) => this.updateForm(element)}
+            />
             {this.submitButton()}
             {this.showError()}
           </form>

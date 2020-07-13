@@ -31,3 +31,11 @@
   margin: 10px;
 
 }
+.postContainer select{
+  font-size: 16px;
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+  background-color:  rgb(253, 210, 210);
+}
