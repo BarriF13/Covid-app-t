@@ -888,6 +888,7 @@
 .myEditor-editor{
   background-color: #fff;
   padding:  20px;
+  margin-top: 20px;
   border-radius: 10px ;
 }
 /*# sourceMappingURL=react-draft-wysiwyg.css.map*/

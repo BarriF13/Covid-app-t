@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import FormField from '../widgets/FormFields/formFields'
 import style from './dashboard.module.css'
 
-import  {Editor  } from 'react-draft-wysiwyg';
-import  {EditorState, convertFromRaw, convertToRaw   } from 'draft-js';
-import  { stateToHTML  } from 'draft-js-export-html';
+import { Editor } from 'react-draft-wysiwyg';
+import { EditorState, convertFromRaw, convertToRaw } from 'draft-js';
+import { stateToHTML } from 'draft-js-export-html';
 
 
 export class Dashboard extends Component {
@@ -44,17 +44,28 @@ export class Dashboard extends Component {
         valid: false,
         touched: false,
         validationMessage: ''
+      },
+      body: {
+        element: 'texteditor',
+        value: '',
+        valid: true
       }
     }
   }
-  updateForm = (element) => {
+  updateForm = (element, content = '') => {
     const newFormData = {
       ...this.state.formData
     }
     const newElement = {
       ...newFormData[element.id] //email
     }
-    newElement.value = element.e.target.value;
+
+    if (content === '') {
+      newElement.value = element.e.target.value;
+    } else {
+      newElement.value = content;
+    }
+
     if (element.blur) {
       let validData = this.validate(newElement);
       // console.log(validData);
@@ -93,11 +104,11 @@ export class Dashboard extends Component {
     for (let key in this.state.formData) {
       formIsValid = this.state.formData[key].valid && formIsValid;
     }
-    
 
-    if(formIsValid){
+      console.log(dataToSubmit);
+    if (formIsValid) {
       console.log('Submit post');
-    }else {
+    } else {
       this.setState({
         postError: 'Something went wrong '
       })
@@ -111,13 +122,13 @@ export class Dashboard extends Component {
         <button type='submit'> Add post </button>
       </div>
   )
-  showError=()=>(
-    this.state.postError !== ''? 
-  <div className={style.errorLabel}>{this.state.postError}</div>
-    :
-    ''
+  showError = () => (
+    this.state.postError !== '' ?
+      <div className={style.errorLabel}>{this.state.postError}</div>
+      :
+      ''
   )
-  onEditorStateChange = (editorState)=>{
+  onEditorStateChange = (editorState) => {
     // console.log(editorState);
 
     let contentState = editorState.getCurrentContent();
@@ -127,7 +138,10 @@ export class Dashboard extends Component {
     //console.log(rawState);
 
     let html = stateToHTML(contentState)
-    console.log(html);
+    // console.log(html);
+
+    this.updateForm({ id:'body' }, html)
+
     this.setState({
       editorState
     })
@@ -139,25 +153,27 @@ export class Dashboard extends Component {
           <form onSubmit={this.submitForm}>
             <h2>Add post </h2>
             <FormField
-              id={'title'}
-              formData={this.state.formData.title}
-              change={(element) => this.updateForm(element)}
-            />
-             <FormField
               id={'author'}
               formData={this.state.formData.author}
               change={(element) => this.updateForm(element)}
             />
 
-            <Editor 
-            editorState ={this.state.editorState}
-            wrapperClassName="myEditor-wrapper"
-            editorClassName="myEditor-editor"
-            onEditorStateChange={this.onEditorStateChange}
+            <FormField
+              id={'title'}
+              formData={this.state.formData.title}
+              change={(element) => this.updateForm(element)}
+            />
+           
+
+            <Editor
+              editorState={this.state.editorState}
+              wrapperClassName="myEditor-wrapper"
+              editorClassName="myEditor-editor"
+              onEditorStateChange={this.onEditorStateChange}
             />
 
             {this.submitButton()}
-            { this.showError() }
+            {this.showError()}
           </form>
 
         </div>
