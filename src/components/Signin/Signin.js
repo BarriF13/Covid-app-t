@@ -157,7 +157,12 @@ submitButton = ()=>(
     <button onClick={(e)=>this.submitForm(e, true)}> Login </button>
   </div>
 )
-
+  showError=()=>(
+    this.state.registerError !== ''? 
+  <div className={style.errorLabel}>{this.state.registerError}</div>
+    :
+    ''
+  )
   render() {
     return (
       <div className={style.logContainer}>
@@ -173,7 +178,8 @@ submitButton = ()=>(
           formData={this.state.formData.password}
           change={(element) => this.updateForm(element)}
         />
-        {this.submitButton() }
+        { this.submitButton() }
+        { this.showError() }
         </form>
         
       </div>
