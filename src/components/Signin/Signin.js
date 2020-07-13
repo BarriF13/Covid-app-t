@@ -119,7 +119,18 @@ submitForm =(e,type)=>{
          registerError:''
        })
        if(type){
-        console.log('Log In');
+        firebase.auth()
+        .signInWithEmailAndPassword(
+          dataToSubmit.email, 
+          dataToSubmit.password
+        ).then(()=>{
+          this.props.history.push('/')
+        }).catch((error)=>{
+          this.setState({
+            loading:false,
+            registerError:error.message
+          })
+        })
        } else {
         firebase.auth() 
         .createUserWithEmailAndPassword(
