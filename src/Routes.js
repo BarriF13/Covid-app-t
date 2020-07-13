@@ -11,12 +11,11 @@ import VideosMain from './components/Articles/Videos/Main/index';
 import SignIn from './components/Signin/Signin';
 
 
-export class Routes extends Component {
-  
-  render() {
+const Routes =(props)=> {
+ 
     // console.log(this.props); this is user information
     return (
-      <Layout>
+      <Layout user={props.user}>
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/news' exact component={NewsMain}/>
@@ -29,7 +28,7 @@ export class Routes extends Component {
         </Switch>
       </Layout>
     );
-  }
+  
 }
 
 export default Routes;

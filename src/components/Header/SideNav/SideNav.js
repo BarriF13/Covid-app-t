@@ -16,7 +16,7 @@ export const SideNavigation = (props) => {
       >
          {/* <div>Home</div>
          <div>News</div> */}
-         <SideNavItems/>
+         <SideNavItems {...props}/>
       </SideNav>
     </div>
   )
