@@ -117,6 +117,21 @@ export class Dashboard extends Component {
     :
     ''
   )
+  onEditorStateChange = (editorState)=>{
+    // console.log(editorState);
+
+    let contentState = editorState.getCurrentContent();
+    //console.log(contentState);
+    // let rawState= convertToRaw(contentState)
+    //with rawState we can save it to data base in json file but this project we are using html
+    //console.log(rawState);
+
+    let html = stateToHTML(contentState)
+    console.log(html);
+    this.setState({
+      editorState
+    })
+  }
   render() {
     return (
       <div>
