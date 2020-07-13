@@ -3,6 +3,7 @@ import style from './signin.module.css'
 
 import FormField from '../widgets/FormFields/formFields'
 
+import {firebase} from '../../firebase';
 
 export class SignIn extends Component {
 
@@ -98,12 +99,58 @@ validate =(element) =>{
   }
   return error;
 }
+submitForm =(e,type)=>{
+  e.preventDefault();
 
+   if(type !== null){
+
+    let dataToSubmit = {};
+    let formIsValid = true;
+
+    for(let key in this.state.formData){
+      dataToSubmit[key] = this.state.formData[key].value;
+    }
+    for(let key in this.state.formData){
+      formIsValid = this.state.formData[key].valid && formIsValid;
+    }
+      if(formIsValid){
+       this.setState({
+         loading: true,
+         registerError:''
+       })
+       if(type){
+        console.log('Log In');
+       } else {
+        firebase.auth() 
+        .createUserWithEmailAndPassword(
+          dataToSubmit.email, 
+          dataToSubmit.password
+          )
+          .then(()=>{
+            this.props.history.push('/')
+          }).catch((error)=>{
+            this.setState({
+              loading:false,
+              registerError:error.message
+            })
+          })
+        }
+      }
+   }
+}
+submitButton = ()=>(
+  this.state.loading ?
+  'loading...':
+  <div>
+    <button onClick={(e)=>this.submitForm(e, false)}> Register now</button>
+    <button onClick={(e)=>this.submitForm(e, true)}> Login </button>
+  </div>
+)
 
   render() {
     return (
       <div className={style.logContainer}>
-        <form action="">
+        <form onSubmit={(e)=>this.submitForm(e, null)}>
           <h2>Register / Login</h2>
         <FormField
           id={'email'}
@@ -115,6 +162,7 @@ validate =(element) =>{
           formData={this.state.formData.password}
           change={(element) => this.updateForm(element)}
         />
+        {this.submitButton() }
         </form>
         
       </div>
