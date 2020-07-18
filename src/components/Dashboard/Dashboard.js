@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import FormField from '../widgets/FormFields/formFields'
 import style from './dashboard.module.css';
 
-import { firebaseHospitals, firebaseArticles ,firebase } from '../../firebase'
+import { firebaseHospitals, firebaseArticles, firebase } from '../../firebase'
 
 import { Editor } from 'react-draft-wysiwyg';
 import { EditorState, convertFromRaw, convertToRaw } from 'draft-js';
@@ -21,7 +21,7 @@ export class Dashboard extends Component {
         config: {
           name: 'author_input',
           type: 'text',
-          placeholder: 'Enter the Post'
+          placeholder: 'Enter your name'
         },
         validation: {
           required: true
@@ -73,31 +73,33 @@ export class Dashboard extends Component {
       }
     }
   }
-  componentDidMount(){
+  componentDidMount() {
     this.loadHospitals()
   }
-  loadHospitals = () =>{
+  loadHospitals = () => {
     firebaseHospitals.once('value')
-    .then((snapshot)=>{
-      let hospital =[];
+      .then((snapshot) => {
+        let hospital = [];
 
-      snapshot.forEach((childSnapshot) =>{
-        hospital.push({
-          id:childSnapshot.val().hospitalId,
-          name:childSnapshot.val().city,
+        snapshot.forEach((childSnapshot) => {
+          hospital.push({
+            id: childSnapshot.val().hospitalId,
+            name: childSnapshot.val().city
+          })
         })
-      })
-      const newFormData = {...this.state.formData}
-      const newElement = {...newFormData['hospital']}
-      newElement.config.options = hospital;
-      newFormData['hospital'] = newElement;
-      // console.log(newFormData);
 
-      this.setState({
-        formData: newFormData
-      })
+        const newFormData = { ...this.state.formData }
+        const newElement = { ...newFormData['hospital'] }
 
-    })
+        newElement.config.options = hospital;
+        newFormData['hospital'] = newElement;
+        // console.log(newFormData);
+
+        this.setState({
+          formData: newFormData
+        })
+
+      })
   }
   updateForm = (element, content = '') => {
     const newFormData = {
@@ -142,6 +144,7 @@ export class Dashboard extends Component {
   submitForm = (e) => {
 
     e.preventDefault();
+
     let dataToSubmit = {};
     let formIsValid = true;
 
@@ -158,32 +161,32 @@ export class Dashboard extends Component {
     if (formIsValid) {
       this.setState({
         loading: true,
-        postError:''
+        postError: ''
       })
 
       firebaseArticles.orderByChild("id")
-      .limitToLast(1).once('value')
-      .then(snapshot => {
-        let articleId= null;
-        snapshot.forEach(childSnapshot =>{
-          articleId=childSnapshot.val().id
-        })
-        // console.log(articleId);
-        dataToSubmit['date'] =  firebase.database.ServerValue.TIMESTAMP
-        dataToSubmit['id']=articleId+1;
-        dataToSubmit['hospital'] = parseInt(dataToSubmit['hospital']);
-
-        // console.log(dataToSubmit);
-
-        firebaseArticles.push(dataToSubmit)
-        .then(article => {
-          this.props.history.push(`/articles/${article.key}`)
-        }).catch(e => {
-          this.setState({
-            postError: e.message
+        .limitToLast(1).once('value')
+        .then(snapshot => {
+          let articleId = null;
+          snapshot.forEach(childSnapshot => {
+            articleId = childSnapshot.val().id
           })
+          // console.log(articleId);
+          dataToSubmit['date'] = firebase.database.ServerValue.TIMESTAMP
+          dataToSubmit['id'] = articleId + 1;
+          dataToSubmit['hospital'] = parseInt(dataToSubmit['hospital'], 10);
+
+          // console.log(dataToSubmit);
+
+          firebaseArticles.push(dataToSubmit)
+            .then(article => {
+              this.props.history.push(`/articles/${article.key}`)
+            }).catch(e => {
+              this.setState({
+                postError: e.message
+              })
+            })
         })
-      })
 
     } else {
       this.setState({
@@ -210,7 +213,7 @@ export class Dashboard extends Component {
 
     let contentState = editorState.getCurrentContent();
     //console.log(contentState);
-    // let rawState= convertToRaw(contentState)
+    let rawState = convertToRaw(contentState)
     //with rawState we can save it to data base in json file but this project we are using html
     //console.log(rawState);
 
@@ -223,52 +226,52 @@ export class Dashboard extends Component {
       editorState
     })
   }
-  storeFilename =(filename)=>{
-    this.updateForm({ id: 'body' }, filename)
+  storeFilename = (filename) => {
+    this.updateForm({ id: 'image' }, filename)
   }
+
   render() {
     return (
-      <div>
-        <div className={style.postContainer}>
-          <form onSubmit={this.submitForm}>
-            <h2>Add post </h2>
 
-            <UpLoader
-              fileName={(filename)=> this.storeFilename(filename)}
-            />
+      <div className={style.postContainer}>
+        <form onSubmit={this.submitForm}>
+          <h2>Add post </h2>
+
+          <UpLoader
+            fileName={(filename) => this.
+            storeFilename(filename)}
+          />
+
+          <FormField
+            id={'author'}
+            formData={this.state.formData.author}
+            change={(element) => this.updateForm(element)}
+          />
+
+          <FormField
+            id={'title'}
+            formData={this.state.formData.title}
+            change={(element) => this.updateForm(element)}
+          />
 
 
+          <Editor
+            editorState={this.state.editorState}
+            wrapperClassName="myEditor-wrapper"
+            editorClassName="myEditor-editor"
+            onEditorStateChange={this.onEditorStateChange}
+          />
+          <FormField
+            id={'hospital'}
+            formData={this.state.formData.hospital}
+            change={(element) => this.updateForm(element)}
+          />
+          {this.submitButton()}
+          {this.showError()}
+        </form>
 
-            <FormField
-              id={'author'}
-              formData={this.state.formData.author}
-              change={(element) => this.updateForm(element)}
-            />
-
-            <FormField
-              id={'title'}
-              formData={this.state.formData.title}
-              change={(element) => this.updateForm(element)}
-            />
-
-
-            <Editor
-              editorState={this.state.editorState}
-              wrapperClassName="myEditor-wrapper"
-              editorClassName="myEditor-editor"
-              onEditorStateChange={this.onEditorStateChange}
-            />
-            <FormField
-              id={'hospital'}
-              formData={this.state.formData.hospital}
-              change={(element) => this.updateForm(element)}
-            />
-            {this.submitButton()}
-            {this.showError()}
-          </form>
-
-        </div>
       </div>
+
     )
   }
 }

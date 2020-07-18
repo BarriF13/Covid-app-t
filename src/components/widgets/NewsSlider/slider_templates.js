@@ -41,6 +41,7 @@ const SliderTemplates =(props)=> {
     } )
 
     break;
+    default:
    //we can use another templates here--case('other'):...
     template = null;
   }

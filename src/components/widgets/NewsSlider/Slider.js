@@ -3,10 +3,11 @@ import React, { Component } from 'react';
 import SliderTemplates from './slider_templates';
 // import {URL} from '../../../config';
 import { firebase, firebaseArticles, firebaseLooper } from '../../../firebase'
+//import resolve from 'resolve';
 
-export class Slider extends Component {
+export class NewsSlider extends Component {
   state = {
-    news: []
+    news:[]
 
   }
   componentWillMount() {
@@ -14,21 +15,40 @@ export class Slider extends Component {
       .then((snapshot) => {
         const news = firebaseLooper(snapshot)
 
-        news.forEach((item, i) => {
-          firebase.storage().ref('images')
-          .child(item.image).getDownloadURL()
-          .then(url=>{
-            news[i].image= url;
-            this.setState({
-              news
-            })
-          })
+        // news.forEach((item, i) => {
+        //   firebase.storage().ref('images')
+        //   .child(item.image).getDownloadURL()
+        //   .then(url=>{
+        //     news[i].image= url;
+        //     this.setState({
+        //       news
+        //     })
+        //   })
 
-        });
+        // });
         // this.setState({
         //   news
         // })
-      })
+        const asyncFunction = (item, i, cb) => {
+          firebase.storage().ref('images')
+            .child(item.image).getDownloadURL()
+            .then(url => {
+              news[i].image = url;
+              cb();
+            })
+        }
+        let requests = news.map((item, i) => {
+          return new Promise((resolve) => {
+            asyncFunction(item, i, resolve)
+          })
+        })
+        Promise.all(requests).then(() => {
+          this.setState({
+            news
+          })
+        })
+
+      });
 
 
     // axios.get(`${URL}/articles?_start=${this.props.start}&_end=${this.props.amount}`)
@@ -49,4 +69,4 @@ export class Slider extends Component {
   }
 }
 
-export default Slider;
+export default NewsSlider;
