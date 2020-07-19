@@ -61,8 +61,8 @@ export class UpLoader extends Component {
           null}
           {
             this.state.fileURL ?
-            <img style={{width:'300px'}} 
-            src={this.state.fileURL}/>
+            <img style={{width:'200px'}} 
+            src={this.state.fileURL} alt={this.state.fileURL}/>
             : null
           }
       </div>

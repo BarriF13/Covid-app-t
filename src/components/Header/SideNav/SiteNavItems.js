@@ -32,6 +32,13 @@ const SiteNavItems = (props) => {
     },
     {
       type: style.option,
+      icon: 'address-card',
+      text: 'About this project',
+      link: '/about',
+      login: ''
+    },
+    {
+      type: style.option,
       icon: 'play',
       text: 'Dashboard',
       link: '/dashboard',
