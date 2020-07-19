@@ -169,4 +169,4 @@ export class NewsList extends Component {
   }
 }
 
-export default NewsList
+export default NewsList;

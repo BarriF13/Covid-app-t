@@ -8,6 +8,7 @@ const About = () => {
     <div className = {style.container}>
       <h2> About this project</h2>
       <p> This is a demo site made by React js for educational purposes.<br/><br/> 
+      
        User can see the slide show, recent articles and videos.<br/> 
        User can load more articles and videos on the homepage.<br/> 
        User can navigate the side with side bar nav.
@@ -16,6 +17,7 @@ const About = () => {
        <br/> 
        Registered user can post an article on the news section of the site.
        <br/> 
+       Designed for width of 600px and small screens<br/>
       </p>
       <h3><i class="fas fa-tasks"></i>  Learning objective</h3>
       <ul>
