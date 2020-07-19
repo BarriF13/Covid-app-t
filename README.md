@@ -15,7 +15,7 @@ A single-page web app for news and articles about Covid-19<br/>
 Designed for small screen width<br/><br/>
 <img src="./public/img/view.png" width="100"/>
 
-## <a name="demo"> To see the live demo:</a>[ visit here](http://covid-19-firebase.com/)🏃
+## <a name="demo"> To see the live demo:</a>[ visit here](https://covid-19-efe88.web.app/)🏃
 
 ## <a name="features">Features</a>
 -  This app have 3 sections : articles , hospitals and videos.
