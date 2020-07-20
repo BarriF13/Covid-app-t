@@ -61,4 +61,4 @@ run `npm start` and your default browser will pop up a window with the app!
   💎[My github CV](https://github.com/BarriF13/Barri_CV)<br><br>
   💎[My online portfolio](https://bdesignstudio.co.uk/)
 
-Thanks you
+Thank you
